@@ -1,8 +1,8 @@
-const selfRepeat = (startNum, endNums) => {
+const selfRepeat = (startNum, endNum) => {
   console.log(`count outside if : ${startNum}`);
-  if (startNum < endNums) {
+  if (startNum < endNum) {
     console.log(`count inside if : ${startNum}`);
-    const countArr = selfRepeat(startNum + 1, endNums);
+    const countArr = selfRepeat(startNum + 1, endNum);
     countArr.push(startNum);
     console.log(`countArr stack : ${countArr}`);
     return countArr;
